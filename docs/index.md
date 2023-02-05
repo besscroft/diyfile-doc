@@ -3,12 +3,17 @@ layout: home
 
 hero:
   name: xanadu
-  text: 一款好看的在线网盘
-  tagline: 正在编写中，希望能帮到你！
+  text: 一款好看的在线文件列表程序，使用 Spring Boot 3 和 Vue 驱动
   actions:
+  - theme: brand
+    text: 开始吧
+    link: /xanadu/
   - theme: alt
     text: View on GitHub
     link: https://github.com/besscroft/xanadu
+  - theme: alt
+    text: Demo
+    link: https://xanadu.besscroft.com
 
 features:
   - title: 文件预览
@@ -20,3 +25,19 @@ features:
   - title: 免费开源
     details: 本项目完全开源，你可以免费使用！(目前还在开发测试中，写的差不多了就开源！)
 ---
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme';
+
+const members = [
+  {
+    avatar: 'https://besscroft.com/uploads/avatar.jpeg',
+    name: 'Bess Croft',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/besscroft' },
+    ]
+  },
+]
+</script>
+<br />
+<VPTeamMembers size="small" :members="members" />
