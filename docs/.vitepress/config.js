@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-    title: 'xanadu 文档',
+    title: 'diyfile 文档',
     description: '当然是文档啦！',
     lastUpdated: true,
     ignoreDeadLinks: true,
@@ -11,28 +11,28 @@ export default defineConfig({
         outlineTitle: '当前页面',
         nav: [
             { text: '首页', link: '/' },
-            { text: '文档', link: '/xanadu/' },
+            { text: '文档', link: '/diyfile/' },
             { text: '关于', link: '/about' },
         ],
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/besscroft/xanadu' },
+            { icon: 'github', link: 'https://github.com/besscroft/diyfile' },
         ],
         editLink: {
-            pattern: 'https://github.com/besscroft/xanadu-doc/edit/main/docs/:path',
+            pattern: 'https://github.com/besscroft/diyfile-doc/edit/main/docs/:path',
             text: 'Edit this page on GitHub'
         },
         sidebar: {
-            '/xanadu/': [
-                { text: 'Guide', link: '/xanadu/' },
+            '/diyfile/': [
+                { text: 'Guide', link: '/diyfile/' },
                 {
                     text: '安装',
                     items: [
-                        { text: '前端部署', link: '/xanadu/install/front' },
-                        { text: '数据库', link: '/xanadu/install/database' },
-                        { text: '后端部署', link: '/xanadu/install/backend' },
+                        { text: '前端部署', link: '/diyfile/install/front' },
+                        { text: '数据库', link: '/diyfile/install/database' },
+                        { text: '后端部署', link: '/diyfile/install/backend' },
                     ]
                 },
-                { text: '常见问题', link: '/xanadu/faqs/' }
+                { text: '常见问题', link: '/diyfile/faqs/' }
             ],
         },
         footer: {

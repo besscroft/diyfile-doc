@@ -20,7 +20,7 @@ spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     # 数据库连接地址
-    url: jdbc:mysql://127.0.0.7:3306/xanadu?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.7:3306/diyfile?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
     # 数据库用户名
     username: root
     # 数据库密码
@@ -45,7 +45,7 @@ spring:
 # MyBatis配置
 mybatis:
   # 搜索指定包别名
-  typeAliasesPackage: com.besscroft.xanadu.common.entity
+  typeAliasesPackage: com.besscroft.diyfile.common.entity
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
   mapperLocations: classpath*:mapper/*Mapper.xml
   configuration:
@@ -87,7 +87,7 @@ springdoc:
     # 页面展示
     enabled: true
   # 配置扫描的包
-  packages-to-scan: com.besscroft.xanadu
+  packages-to-scan: com.besscroft.diyfile
   cache:
     disabled: false
   pre-loading-enabled: true
@@ -128,10 +128,10 @@ docker run -d --name <容器名> \
 * 示例命令：
 
 ```shell
-docker run -d --name xanadu \
+docker run -d --name diyfile \
   -p 8080:8080 \
   -v /root:/root \
-  besscroft/xanadu:v0.1.0
+  besscroft/diyfile:v0.1.2
 ```
 
 > 端口可以自定义，docker 容器内的程序端口为 8080，你可以自定义对应的宿主机的端口，以及网络类型。请注意，容器内连接主机端口，可以使用 ip 172.17.0.1。
@@ -139,12 +139,12 @@ docker run -d --name xanadu \
 * 当然，你也可以指定 yaml 配置文件启动：
 
 ```shell
-docker run -d --name xanadu \
+docker run -d --name diyfile \
 	-p 8080:8080 \
 	-v /root:/root \
 	-e JAVA_OPTS="-Xms512m -Xmx512m -Duser.timezone=GMT+08 -Dfile.encoding=UTF8" \
 	-e SPRING_CONFIG="-Dspring.config.location=/root/application-dev.yml" \
-	besscroft/xanadu:v0.1.0
+	besscroft/diyfile:v0.1.2
 ```
 
 发现了吗？启动参数支持定制化，你可以根据自己的需求来调整！

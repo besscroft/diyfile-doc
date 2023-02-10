@@ -17,7 +17,7 @@ title: Guide
 
 ## 预览
 
-[xanadu](https://xanadu.besscroft.com) <Badge type="tip" text="^0.1.1" />
+[diyfile](https://demo.besscroft.com) <Badge type="tip" text="^0.1.2" />
 
 ## 存储支持
 

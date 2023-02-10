@@ -2,18 +2,18 @@
 layout: home
 
 hero:
-  name: xanadu
+  name: DiyFile
   text: 一款好看的在线文件列表程序，使用 Spring Boot 3 和 Vue 驱动
   actions:
   - theme: brand
     text: 开始吧
-    link: /xanadu/
+    link: /diyfile/
   - theme: alt
     text: View on GitHub
-    link: https://github.com/besscroft/xanadu
+    link: https://github.com/besscroft/diyfile
   - theme: alt
     text: Demo
-    link: https://xanadu.besscroft.com
+    link: https://demo.besscroft.com
 
 features:
   - title: 文件预览
