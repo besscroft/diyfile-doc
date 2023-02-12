@@ -24,7 +24,7 @@ docker run -d --name <容器名> \
 ```shell
 docker run -d --name diyfile \
   -p 8080:8080 \
-  besscroft/diyfile:v0.1.3
+  besscroft/diyfile:v0.1.4
 ```
 
 > 端口可以自定义，docker 容器内的程序端口为 8080，你可以自定义对应的宿主机的端口，以及网络类型。请注意，容器内连接主机端口，可以使用 ip 172.17.0.1。
@@ -37,7 +37,7 @@ docker run -d --name diyfile \
 	-v /root:/root \
 	-e JAVA_OPTS="-Xms512m -Xmx512m -Duser.timezone=GMT+08 -Dfile.encoding=UTF8" \
 	-e SPRING_CONFIG="--spring.datasource.url=jdbc:mysql://localhost:3306/diyfile?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false --spring.datasource.username=root --spring.datasource.password=666666" \
-	besscroft/diyfile:v0.1.3
+	besscroft/diyfile:v0.1.4
 ```
 
 > 让我来解释一下：`-e SPRING_CONFIG="--spring.datasource.url=jdbc:mysql://{这里是ip地址}:{这里是端口}/{这里是数据库名称}?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false --spring.datasource.username={这里是数据库用户名} --spring.datasource.password={这里是数据库密码}"`，相比你应该可以照着例子自己修改了吧？

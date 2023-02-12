@@ -3,7 +3,8 @@ layout: home
 
 hero:
   name: DiyFile
-  text: 一款好看的在线文件列表程序，使用 Spring Boot 3 和 Vue 驱动
+  text: 一款好看的在线文件列表程序
+  tagline: 由 Spring Boot 3 和 Vue 驱动
   actions:
   - theme: brand
     text: 开始吧

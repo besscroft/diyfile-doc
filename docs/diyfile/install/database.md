@@ -5,7 +5,9 @@ title: 数据库
 
 我们目前支持 mysql 和 mariadb 两种数据库，推荐使用 mariadb。
 
-新建数据库 `diyfile`，将 `diyfile.sql` 文件导入进数据库。
+新建数据库 `diyfile`，将 sql 文件导入进数据库。
+
+> `diyfile-meta.sql` 为结构表，`diyfile-data.sql` 为数据表。
 
 数据库文件点此[下载](https://demo.besscroft.com/od/release)最新版本即可！
 
