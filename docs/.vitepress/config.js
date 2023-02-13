@@ -30,6 +30,7 @@ export default defineConfig({
                         { text: '前端部署', link: '/diyfile/install/front' },
                         { text: '数据库', link: '/diyfile/install/database' },
                         { text: '后端部署', link: '/diyfile/install/backend' },
+                        { text: 'Swagger 支持', link: '/diyfile/install/swagger' },
                     ]
                 },
                 { text: '常见问题', link: '/diyfile/faqs/' }
