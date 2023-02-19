@@ -19,8 +19,8 @@ hero:
 features:
   - title: 文件预览
     details: 支持图片、视频、音频、文本、PDF 等格式的文件预览
-  - title: 权限控制
-    details: 接口级别的权限控制，支持用户、角色的管理
+  - title: 多存储支持
+    details: 支持多个存储提供商，包括本地存储、阿里云盘、OneDrive、Google Drive 等。
   - title: 现代化部署支持
     details: 支持 Docker 部署，方便快捷。前端支持 Vercel 和 Netlify 部署
   - title: 免费开源
