@@ -19,3 +19,33 @@ location / {
   try_files $uri $uri/ /index.html; 
 }
 ```
+
+## Vercel 部署前端
+
+首先 Fork 前端项目，然后修改 `api/proxy.ts` 中的后端地址为你自己的地址。
+
+```ts
+const apiProxy = createProxyMiddleware({
+    target: 'https://api.besscroft.com/@api', // 这里是示例，改成你自己的，如 https://api.example.com/@api
+    changeOrigin: true,
+    pathRewrite: {
+        '^/@api/': '/',
+    },
+})
+```
+
+然后在 Vercel 中部署项目。
+
+## Netlify 部署前端
+
+首先 Fork 前端项目，然后修改 `netlify.toml` 中的后端地址为你自己的地址。
+
+```toml
+[[redirects]]
+  from = "/@api/*"
+  to = "https://api.besscroft.com/:splat"
+  status = 200
+  force = true
+```
+
+> 同理，这里也是替换一下地址就行了.
