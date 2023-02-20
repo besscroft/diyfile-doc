@@ -23,8 +23,8 @@ features:
     details: 支持多个存储提供商，包括本地存储、阿里云盘、OneDrive、Google Drive 等。
   - title: 现代化部署支持
     details: 支持 Docker 部署，方便快捷。前端支持 Vercel 和 Netlify 部署
-  - title: 免费开源
-    details: 本项目完全开源，你可以免费使用！(目前还在开发测试中，写的差不多了就开源！)
+  - title: 多端支持
+    details: 支持 Web 和 PWA
 ---
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme';
