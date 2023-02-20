@@ -21,13 +21,13 @@ title: Guide
 
 ## 存储支持
 
-- :technologist: 本地存储
+- :technologist: 本地存储 (开发中)
 - :white_check_mark: OneDrive（[国际版](https://www.office.com/)）
 - :technologist: [阿里云盘](https://www.aliyundrive.com/)
 - :technologist: [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
 - :technologist: [GoogleDrive](https://drive.google.com/)
 - :technologist: [S3](https://aws.amazon.com/cn/s3/)
-- :technologist: [阿里云对象存储](https://www.aliyun.com/product/oss)
+- :technologist: [阿里云对象存储](https://www.aliyun.com/product/oss) (开发中)
 - :technologist: [腾讯云对象存储](https://cloud.tencent.com/product/cos)
 - :technologist: [又拍云对象存储](https://www.upyun.com/products/file-storage)
 - :technologist: [七牛云对象存储](https://www.qiniu.com/products/kodo)

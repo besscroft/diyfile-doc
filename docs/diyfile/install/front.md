@@ -22,7 +22,7 @@ location / {
 
 ## Vercel 部署前端
 
-首先 Fork 前端项目，然后修改 `api/proxy.ts` 中的后端地址为你自己的地址。
+首先 Fork [前端项目](https://github.com/besscroft/diyfile-web)，然后修改 `api/proxy.ts` 中的后端地址为你自己的地址。
 
 ```ts
 const apiProxy = createProxyMiddleware({
@@ -38,7 +38,7 @@ const apiProxy = createProxyMiddleware({
 
 ## Netlify 部署前端
 
-首先 Fork 前端项目，然后修改 `netlify.toml` 中的后端地址为你自己的地址。
+首先 Fork [前端项目](https://github.com/besscroft/diyfile-web)，然后修改 `netlify.toml` 中的后端地址为你自己的地址。
 
 ```toml
 [[redirects]]
