@@ -33,7 +33,22 @@ docker run -d --name diyfile \
   besscroft/diyfile:latest
 ```
 
-> 端口可以自定义，docker 容器内的程序端口为 8080，你可以自定义对应的宿主机的端口，以及网络类型。请注意，容器内连接主机端口，可以使用 ip 172.17.0.1。
+::: warning 关于容器内网络问题请注意！！！
+端口可以自定义，docker 容器内的程序端口为 8080，你可以自定义对应的宿主机的端口，以及网络类型。
+请注意，容器内连接主机端口，可以使用 ip 172.17.0.1。或者是用 host 网络模式，直接使用主机网络。
+如：
+```shell
+docker run -d --name diyfile \
+  -p 8080:8080 \
+  -e JAVA_OPTS="-Xms512m -Xmx512m -Duser.timezone=GMT+08 -Dfile.encoding=UTF8" \
+  -e DB_URL="localhost:3306" \
+  -e DB_NAME="diyfile" \
+  -e DB_USERNAME="root" \
+  -e DB_PASSWORD="666666" \
+  --net host \
+  besscroft/diyfile:latest
+```
+:::
 
 * 下面是对上面内容的解释：
 
