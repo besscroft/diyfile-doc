@@ -9,7 +9,7 @@ title: 数据库
 
 > `diyfile-meta.sql` 为结构表，`diyfile-data.sql` 为数据表。
 
-数据库文件点此[下载](https://demo.besscroft.com/od/release)最新版本即可！
+数据库文件点此[下载](https://github.com/besscroft/diyfile/releases)最新版本即可，或者在项目的 `doc/sql` 目录下。
 
 ::: tip 默认账号密码
 超级管理员默认账号密码为 diyfile/666666
