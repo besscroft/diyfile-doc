@@ -13,11 +13,11 @@ title: Guide
 一款好看的在线文件列表程序，使用 Spring Boot 3 和 Vue 驱动:rocket:
 
 
-> 本项目在不断更新维护，更多组件也会在后续的版本中开发迭代。虽然开发时间可能会很长，但是我们会尽可能地提供更多的功能、更完善的架构、更好的解决方案，以便您能够更好的使用。
+> 本项目在不断更新维护，更多组件也会在后续的版本中开发迭代。虽然开发时间可能会很长，但是我们会尽可能地提供更多的功能、更完善的架构、更好的解决方案，以便您能够更好地使用。
 
 ## 预览
 
-[diyfile](https://demo.besscroft.com) <Badge type="tip" text="^0.1.9" />
+[diyfile](https://demo.besscroft.com) <Badge type="tip" text="^0.2.1" />
 
 ## 存储支持
 
@@ -27,7 +27,7 @@ title: Guide
 - :technologist: [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
 - :technologist: [GoogleDrive](https://drive.google.com/)
 - :technologist: [S3](https://aws.amazon.com/cn/s3/)
-- :technologist: [阿里云对象存储](https://www.aliyun.com/product/oss) (开发中)
+- :white_check_mark: [阿里云对象存储](https://www.aliyun.com/product/oss)
 - :technologist: [腾讯云对象存储](https://cloud.tencent.com/product/cos)
 - :technologist: [又拍云对象存储](https://www.upyun.com/products/file-storage)
 - :technologist: [七牛云对象存储](https://www.qiniu.com/products/kodo)

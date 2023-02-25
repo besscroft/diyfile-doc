@@ -2,6 +2,10 @@
 title: 前端部署
 ---
 
+::: tip 多平台部署支持
+你只需要在多种方式选一种就行了，我比较推荐用 Vercel 部署，因为它是免费的，而且部署方便。
+:::
+
 ## Nginx 部署前端
 
 首先[下载](https://github.com/besscroft/diyfile-web/releases)最新版本资源包，解压后将 `dist` 目录放到 nginx 的 `html` 目录下。
