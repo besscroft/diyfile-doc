@@ -33,6 +33,7 @@ export default defineConfig({
                         { text: 'Swagger 支持', link: '/diyfile/install/swagger' },
                     ]
                 },
+                { text: '白嫖方案', link: '/diyfile/free/' },
                 { text: '常见问题', link: '/diyfile/faqs/' },
                 { text: '开发', link: '/diyfile/dev/' },
             ],
