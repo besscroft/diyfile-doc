@@ -25,17 +25,29 @@ export default defineConfig({
             '/diyfile/': [
                 { text: 'Guide', link: '/diyfile/' },
                 {
-                    text: '安装',
+                    text: '部署',
                     items: [
+                        { text: '快速开始', link: '/diyfile/install/quick' },
                         { text: '前端部署', link: '/diyfile/install/front' },
-                        { text: '数据库', link: '/diyfile/install/database' },
-                        { text: '后端部署', link: '/diyfile/install/backend' },
+                        { text: '反向代理', link: '/diyfile/install/proxy' },
+                    ]
+                },
+                {
+                    text: '进阶部署',
+                    items: [
+                        { text: '数据库', link: '/diyfile/deploy/database' },
+                        { text: '后端部署', link: '/diyfile/deploy/backend' },
+                        { text: '白嫖方案', link: '/diyfile/deploy/free/' },
+                    ]
+                },
+                {
+                    text: '开发',
+                    items: [
+                        { text: '开发', link: '/diyfile/dev/' },
                         { text: 'Swagger 支持', link: '/diyfile/install/swagger' },
                     ]
                 },
-                { text: '白嫖方案', link: '/diyfile/free/' },
                 { text: '常见问题', link: '/diyfile/faqs/' },
-                { text: '开发', link: '/diyfile/dev/' },
             ],
         },
         footer: {

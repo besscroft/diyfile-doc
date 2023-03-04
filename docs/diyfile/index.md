@@ -17,7 +17,7 @@ title: Guide
 
 ## 预览
 
-[diyfile](https://demo.besscroft.com) <Badge type="tip" text="^0.2.1" />
+[diyfile](https://demo.besscroft.com) <Badge type="tip" text="^0.2.2" />
 
 ## 存储支持
 
