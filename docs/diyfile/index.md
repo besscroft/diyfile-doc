@@ -17,16 +17,16 @@ title: Guide
 
 ## 预览
 
-[diyfile](https://demo.besscroft.com) <Badge type="tip" text="^0.2.2" />
+[diyfile](https://demo.besscroft.com) <Badge type="tip" text="latest" />
 
 ## 存储支持
 
 - :technologist: 本地存储 (开发中)
 - :white_check_mark: OneDrive（[国际版](https://www.office.com/)）
 - :technologist: [阿里云盘](https://www.aliyundrive.com/)
-- :technologist: [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
+- :technologist: [天翼云盘](https://cloud.189.cn)
 - :technologist: [GoogleDrive](https://drive.google.com/)
-- :technologist: [S3](https://aws.amazon.com/cn/s3/)
+- :technologist: [S3](https://aws.amazon.com/cn/s3/) (开发中)
 - :white_check_mark: [阿里云对象存储](https://www.aliyun.com/product/oss)
 - :technologist: [腾讯云对象存储](https://cloud.tencent.com/product/cos)
 - :technologist: [又拍云对象存储](https://www.upyun.com/products/file-storage)
