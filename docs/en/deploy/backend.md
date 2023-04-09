@@ -16,7 +16,7 @@ docker run -d --name <container name> \
   -p <host port>:<container port> \
   -v <host directory>:<container directory> \
   -e <environment variable name>=<environment variable value> \
-  <mirror name>:<version number>-mysql
+  <mirror name>:<version number>
 ```
 
 * example command：
@@ -24,21 +24,23 @@ docker run -d --name <container name> \
 ```shell
 docker run -d --name diyfile \
   -p 8080:8080 \
+  -e SPRING_PROFILE="mysql" \
   -e JAVA_OPTS="-Xms512m -Xmx512m -Duser.timezone=GMT+08 -Dfile.encoding=UTF8" \
   -e DB_URL="localhost:3306" \
   -e DB_NAME="diyfile" \
   -e DB_USERNAME="root" \
   -e DB_PASSWORD="666666" \
-  besscroft/diyfile:v0.3.0-mysql
+  besscroft/diyfile:latest
 ```
 
-| 名称          | 说明                                                         | 默认值         |
+| name          | manual                                                         | Defaults         |
 | ------------- | ------------------------------------------------------------ | -------------- |
 | DB_URL        | Database link address (port)                                         | localhost:3306 |
 | DB_NAME       | Name database                                                   | diyfile        |
 | DB_SSL        | Whether to enable SSL                                                 | false          |
 | DB_USERNAME   | database username                                                 | root           |
 | DB_PASSWORD   | database password                                                   | 666666         |
+| SPRING_PROFILE | Configuration file version, options are mysql and sqlite                                         | sqlite |
 | FLYWAY_ENABLE | Whether to automatically initialize the database, only supports sqlite, mysql 8.x version, or the corresponding version of mariadb and mysql 8.x. | false          |
 | DOC_ENABLE    | api documentation enabled                                                 | false          |
 | DOC_UI_ENABLE | swagger-ui enabled                                              | false          |
@@ -51,12 +53,13 @@ example：
 ```shell
 docker run -d --name diyfile \
   -p 8080:8080 \
+  -e SPRING_PROFILE="mysql" \
   -e JAVA_OPTS="-Xms512m -Xmx512m -Duser.timezone=GMT+08 -Dfile.encoding=UTF8" \
   -e DB_URL="localhost:3306" \
   -e DB_NAME="diyfile" \
   -e DB_USERNAME="root" \
   -e DB_PASSWORD="666666" \
   --net host \
-  besscroft/diyfile:v0.3.0-mysql
+  besscroft/diyfile:latest
 ```
 :::

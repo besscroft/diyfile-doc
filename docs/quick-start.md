@@ -19,6 +19,7 @@ category: [功能,教程]
 ```shell
 docker run -d --name diyfile \
   -p 8080:8080 \
+  -e SPRING_PROFILE="sqlite" \
   -e JAVA_OPTS="-Xms512m -Xmx512m -Duser.timezone=GMT+08 -Dfile.encoding=UTF8" \
   -v /root/data:/data \
   besscroft/diyfile:latest
@@ -29,12 +30,13 @@ docker run -d --name diyfile \
 ```shell
 docker run -d --name diyfile \
   -p 8080:8080 \
+  -e SPRING_PROFILE="mysql" \
   -e JAVA_OPTS="-Xms512m -Xmx512m -Duser.timezone=GMT+08 -Dfile.encoding=UTF8" \
   -e DB_URL="localhost:3306" \
   -e DB_NAME="diyfile" \
   -e DB_USERNAME="root" \
   -e DB_PASSWORD="666666" \
-  besscroft/diyfile:v0.3.0-mysql
+  besscroft/diyfile:latest
 ```
 :::
 
@@ -49,6 +51,7 @@ docker run -d --name diyfile \
 | DB_SSL        | 是否启用 SSL                                                 | false          |
 | DB_USERNAME   | 数据库用户名                                                 | root           |
 | DB_PASSWORD   | 数据库密码                                                   | 666666         |
+| SPRING_PROFILE | 配置文件版本，可选项为 mysql 和 sqlite                                         | sqlite |
 | FLYWAY_ENABLE | 是否进行数据库自动初始化，只支持 sqlite、mysql 8.x 版本，或者 mariadb 跟 mysql 8.x 对应的版本。 | false          |
 | DOC_ENABLE    | api 文档启用                                                 | false          |
 | DOC_UI_ENABLE | swagger ui 启用                                              | false          |
