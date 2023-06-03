@@ -19,6 +19,17 @@ export const zhSidebar = sidebar({
     },
     {
       icon: "discover",
+      text: "手册",
+      prefix: "/manual",
+      children: [
+        "local.md",
+        "onedrive.md",
+        "AmazonS3.md",
+        "alioss.md",
+      ]
+    },
+    {
+      icon: "discover",
       text: "高级",
       prefix: "/advanced",
       children: [

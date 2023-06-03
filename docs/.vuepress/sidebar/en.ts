@@ -19,6 +19,17 @@ export const enSidebar = sidebar({
     },
     {
       icon: "discover",
+      text: "Manual",
+      prefix: "/en/manual",
+      children: [
+        "local.md",
+        "onedrive.md",
+        "AmazonS3.md",
+        "alioss.md",
+      ]
+    },
+    {
+      icon: "discover",
       text: "Advanced",
       prefix: "/en/advanced",
       children: [
