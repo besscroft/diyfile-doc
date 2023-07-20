@@ -38,5 +38,6 @@ export const enSidebar = sidebar({
         "swagger.md",
       ]
     },
+    "remember-us",
   ],
 });

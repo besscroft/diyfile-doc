@@ -38,5 +38,6 @@ export const zhSidebar = sidebar({
         "swagger.md",
       ]
     },
+    "remember-us",
   ],
 });
