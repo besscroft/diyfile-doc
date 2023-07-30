@@ -15,6 +15,7 @@ export const enSidebar = sidebar({
         "database.md",
         "backend.md",
         "free.md",
+        "compose.md",
       ]
     },
     {
