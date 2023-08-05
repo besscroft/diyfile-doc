@@ -17,7 +17,7 @@ If you directly operate the database, then you are happy!
 
 ::: details What are the deployment methods?
 It is currently planned to adopt containerized deployment, and it is a front-end and back-end separation deployment. 
-Of course, we also support the way of front-end and back-end deployment together, but this way is not recommended, and I am too lazy to write supporting documents.
+Of course, we also support the way of <b>👉<a href="/en/deploy/compose.html">deploying the front and back ends together</a></b>.
 However, the front end already supports deployment on Edge Networks such as Netlify and Vercel. Of course, Nginx is also no problem, and the back end can be deployed anywhere that supports containers. 
 It is one of our development goals to facilitate users to deploy for free!
 :::
